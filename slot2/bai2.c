@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main() {
-    // khai bao 1 bien so nguyen
+    // khai bao 1 bien so thuc
     float S; //giai thich: khai bao bien S la gia tri so thuc (float or double)
 
     //khoi tao gia tri bat ky

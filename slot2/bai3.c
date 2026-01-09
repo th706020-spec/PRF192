@@ -11,7 +11,7 @@ int main() {
     //in b
 	printf("b = %.3f\n", b); //giai thich: in ra man hinh bang lenh printf, va %f la chuoi dinh dang de gia tri dat vao dung vi tri do va la dinh dang so thuc, va \n la xuong dong
 	//in kq a+b
-	printf("5 + 10.216 = %.2f\n", kq); //giai thich: in ra man hinh bang lenh printf, va %f la chuoi dinh dang de gia tri dat vao dung vi tri do va la dinh dang so thuc, va \n la xuong dong
+	printf("%.0f + %.3f = %.2f\n", a,b,kq); //giai thich: in ra man hinh bang lenh printf, va %f la chuoi dinh dang de gia tri dat vao dung vi tri do va la dinh dang so thuc, va \n la xuong dong
 	
 	
 	
