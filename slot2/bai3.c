@@ -7,11 +7,11 @@ int main() {
     //khai bao bien kq, la ket qua cua a+b
     float kq; //giai thich: khai bao bien kq la gia tri so thuc (float or double)
     //in a
-    printf("gia tri a la: %.0f\n", a); //giai thich: in ra man hinh bang lenh printf, va %f la chuoi dinh dang de gia tri dat vao dung vi tri do va la dinh dang so thuc, va \n la xuong dong
+    printf("a =  %.0f\n", a); //giai thich: in ra man hinh bang lenh printf, va %f la chuoi dinh dang de gia tri dat vao dung vi tri do va la dinh dang so thuc, va \n la xuong dong
     //in b
-	printf("gia tri b la: %.3f\n", b); //giai thich: in ra man hinh bang lenh printf, va %f la chuoi dinh dang de gia tri dat vao dung vi tri do va la dinh dang so thuc, va \n la xuong dong
+	printf("b = %.3f\n", b); //giai thich: in ra man hinh bang lenh printf, va %f la chuoi dinh dang de gia tri dat vao dung vi tri do va la dinh dang so thuc, va \n la xuong dong
 	//in kq a+b
-	printf("kq a+b la: %.2f\n", a+b); //giai thich: in ra man hinh bang lenh printf, va %f la chuoi dinh dang de gia tri dat vao dung vi tri do va la dinh dang so thuc, va \n la xuong dong
+	printf("5 + 10.216 = %.2f\n", a+b); //giai thich: in ra man hinh bang lenh printf, va %f la chuoi dinh dang de gia tri dat vao dung vi tri do va la dinh dang so thuc, va \n la xuong dong
 	
 	
 	
