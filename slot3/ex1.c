@@ -13,6 +13,7 @@
 int main(){
 	int a = 7;
 	int b = 2;
+	int kq;
 	printf("a = %d\n", a);
 	printf("b = %d\n", b);
 	printf("a + b = %d\n", a + b );
