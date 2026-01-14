@@ -13,11 +13,14 @@
 int main(){
 	int a = 7;
 	int b = 2;
-	int kq;
 	printf("a = %d\n", a);
 	printf("b = %d\n", b);
-	printf("a + b = %d\n", a + b );
-	printf("a - b = %d\n", a - b );
-	printf("a * b = %d\n", a * b );
-	printf("a / b = %.2f\n", (float) a/b );	
+	float kq = a+b;
+	printf("%.d + %.d = %.0f\n", a,b, kq );
+	kq = a - b;
+	printf("%.d - %d = %.0f\n",a,b, kq );
+	kq = a * b;
+	printf("%d * %d = %.0f\n",a,b, kq );
+	kq = (float)a/b;
+	printf("%d / %d = %.2f\n",a,b, kq );	
 }

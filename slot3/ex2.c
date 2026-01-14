@@ -6,8 +6,6 @@
 
 int main(){
 	char kt = 'a';
-	printf("Gia tri cua bien: %c\n", kt);
-	printf("Gia tri Thap phan :%d\n", kt);
-    printf("Gia tri Hex :%x\n", kt);
-    printf("Gia tri Octal :%o\n", kt);
+	printf("%-17s %-17s %-17s %-17s %-17s %-17s\n","ten bien","gia tri" ,"Dec", "Hex", "oct", "size");
+	printf("%-17s %-17d %-17d %-17x %-17o %-17d","kt",kt,kt ,kt , kt, sizeof(kt));
 }
