@@ -7,10 +7,11 @@ int main(){
 	scanf("%d,%d",&a,&b);
 	printf("nhap phep toan:");
 	scanf(" %c",&pt);
-	kq = (float)a/b;
 	if (b == 0){
 		printf ("khong the chia cho 0\n");
 	}
-	else 
+	else {
+		kq = (float)a/b;
 		printf("ket qua: %d %c %d = %.2f",a,pt,b,kq);
+	}
 }
