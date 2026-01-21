@@ -11,5 +11,5 @@ int main() {
 		max=b;
 	if (c>max)
 		max=c;
-	printf("gia tri lon nhat: %.2f",max);
+	printf("so lon nhat la: %.2f",max);
 }
