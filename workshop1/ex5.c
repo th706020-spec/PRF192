@@ -10,24 +10,24 @@ int main(){
 		return 0;
 	}
 	printf("thoi gian xe cho ban (phut): ");
-	scanf("%f",&xc);
-	if (xc>5)
-		pt = (xc - 5);
-		printf ("tien cho la: %.3f\n", pt);
+	kq = scanf("%f", &xc);
+	if (kq == 0 || xc<0){
+		printf("nhap sai");
+		return 0;
+	}
 	if (km>=0){
 		if (km<=0.5){
 			p=12;
-			printf("gia = %.3f nghin dong\n", p + pt);
 		}
 		else if (km<=30){
 			p = 12 + ((km - 0.5) * 15);
-			printf("gia = %.3f nghin dong\n", p + pt);
 		}
 		else {
 			p = 12 + ((30-0.5) * 15) + ((km - 30) * 12);
-			printf("gia = %.3f nghin dong\n", p + pt);
 		}
+		if (xc>5)
+			p = (xc - 5) +p;
 	}
 	printf("|%-16s|%-16s|%-16s\n", "so km","so phut cho","tong tien");
-	printf("|%-16.3f|%-16.3f|%-16.3f", km,xc,p+pt );
+	printf("|%-16.3f|%-16.3f|%-16.3f", km,xc,p );
 }
