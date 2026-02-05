@@ -12,8 +12,8 @@ int main(){
 	}
 	while (n>0) {
 		a = n % 10;
-		kq = kq *10+a;
-		n=n/10;
+		kq = kq *10 + a;
+		n = n / 10;
 	}
 	printf("%d",kq);
 }

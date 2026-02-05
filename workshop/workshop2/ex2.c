@@ -7,7 +7,7 @@ int main(){
 	while (count<5){
 	printf ("nhap vao n: ");
 	while (scanf (" %d", &n) != 1 || n<=0 || n>1000){
-		printf("\n nhap vao n: ");
+		printf("\nnhap vao n: ");
 		scanf("%d", &n);
 		fflush(stdin);
 		//while(getchar() != '\n');
