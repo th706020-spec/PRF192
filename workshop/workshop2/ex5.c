@@ -14,6 +14,6 @@ int main(){
 	    break;
 	    printf("nhap tiep so nguyen duong: ");
 	    kq = kq + soNguyenDuong;    
-}
+	}
 printf("Tong la: %d", kq);
 }

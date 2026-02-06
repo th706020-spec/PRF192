@@ -10,7 +10,7 @@ int main(){
     
     while (n != ranDom){
 		printf ("ban doan so di tu 1 den 10: ");
-		while (scanf (" %d", &n) != 1 || n<=0){
+		while (scanf (" %d", &n) != 1 || n<=0 || n>10){
 			printf("nhap sai, nhap lai: ");
 			fflush(stdin);
 			//while(getchar() != '\n');
