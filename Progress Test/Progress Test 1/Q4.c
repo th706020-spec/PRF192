@@ -19,7 +19,7 @@ int main() {
   printf ("n must be a positive number");
   else{
   	for (int i = 1; i <= n; i++) {
-      printf("%d    ", i * 3);
+      printf("%-8d    ", i * 3);
   	}
   }
   
