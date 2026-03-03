@@ -1,19 +1,35 @@
 #include <stdio.h>
-#include <math.h>
 
-int main(){
-    int soNguyenDuong;
-    int kq = 0;
-    printf("nhap so nguyen duong (nhap 0 de ket thuc): ");
-    do{
-	    while (scanf(" %d", &soNguyenDuong) != 1 || soNguyenDuong < 0){
-	    	printf ("nhap sai nhap lai: ");
-	    	while(getchar() != '\n');
-	    }
-	    if (soNguyenDuong != 0){
-	    printf("nhap tiep so nguyen duong (nhap 0 de ket thuc): ");
-	    kq = kq + soNguyenDuong; 
-		}
-	}while (soNguyenDuong != 0);
-	printf("Tong la: %d", kq);
+float calculate_taxi_fare(float distance) {
+    float total_fare = 0.0;
+
+    if (distance <= 0) {
+        return 0.0;
+    } else if (distance <= 1) {
+        total_fare = 15000;
+    } else if (distance <= 30) {
+        total_fare = 15000 + (distance - 1) * 12000;
+    } else {
+        total_fare = 15000 + (29 * 12000) + (distance - 30) * 10000;
+    }
+
+    return total_fare;
+}
+
+int main() {
+    float distance;
+
+    while (1) {
+        printf("Nhap quang duong da di (km): ");
+        if (scanf("%f", &distance) == 1 && distance >= 0) {
+            break;
+        }
+        printf("nhap sai\n");
+        while (getchar() != '\n');
+    }
+
+    float fare = calculate_taxi_fare(distance);
+    printf("Tien cuoc cho %.2f km la: %.0f VND\n", distance, fare);
+
+    return 0;
 }
