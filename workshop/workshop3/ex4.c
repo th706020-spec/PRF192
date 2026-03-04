@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+float tinhTong(int a, int b) { return a + b; }
+float tinhHieu(int a, int b) { return a - b; }
+float tinhTich(int a, int b) { return a * b; }
+float tinhThuong(int a, int b) { return (float) a / b; }
+
 void show_menu() {
     printf("\n======================\n");
     printf("     MAY TINH       \n");
@@ -53,22 +58,22 @@ int processor() {
 
     switch (choice) {
         case '+':
-            kq = a + b;
+            kq = tinhTong(a, b);
             printf("Ket qua: %.2f + %.2f = %.2f\n", a, b, kq);
             break;
         case '-':
-            kq = a - b;
+            kq = tinhHieu(a, b);
             printf("Ket qua: %.2f - %.2f = %.2f\n", a, b, kq);
             break;
         case '*':
-            kq = a * b;
+            kq = tinhTich(a, b);
             printf("Ket qua: %.2f * %.2f = %.2f\n", a, b, kq);
             break;
         case '/':
             if (b == 0) {
                 printf("Loi: Khong the chia cho 0!\n");
             } else {
-                kq = a / b;
+                kq = tinhThuong(a, b);
                 printf("Ket qua: %.2f / %.2f = %.2f\n", a, b, kq);
             }
             break;
