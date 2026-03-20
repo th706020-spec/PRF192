@@ -10,6 +10,19 @@ typedef struct{
 	float price;
 }Book;
 
+void sortBooksAscending(Book arr[], int n) {
+    Book temp; // Biến cấu trúc tạm thời dùng để hoán đổi
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = i + 1; j < n; j++) {
+            // Nếu giá của sách đứng trước lớn hơn sách đứng sau, ta sẽ hoán đổi vị trí
+            if (arr[i].price > arr[j].price) {
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+}
 
 
 int main() {
@@ -39,16 +52,24 @@ int main() {
 				max = i;
 			}
 	}
-	
+	sortBooksAscending(p, n);
   
   // Fixed Do not edit anything here.
   printf("\nOUTPUT:\n");
   	
   //@STUDENT: WRITE YOUR OUTPUT HERE:
+  	printf("sach co gia cao nhat : \n");
 	printf("Book Name: %s\n", p[max].name);
 	printf("Book ID: %d\n", p[max].id);
 	printf("Book Price: %fK\n", p[max].price);
 	
+	printf("Book list after sorted : \n");
+	for(int i = 0 ; i < n ; i ++){
+		printf("Book id:%d\n",b[i].id);
+		printf("Book name:%s\n",b[i].name);
+		printf("Book price:%.2lf\n",b[i].price);
+		printf("\n");
+	}
 	
   //--FIXED PART - DO NOT EDIT ANY THINGS HERE
   printf("\n");
